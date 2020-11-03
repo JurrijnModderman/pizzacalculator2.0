@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza simulator 2.0 | Jurrijn Modderman</title>
+  </head>
+  <body>
+
+  	
+        <script>
+         var pizzasmall = prompt('How much small pizzas do you want? (€4.50)');  
+         var pizzamedium = prompt('How much medium pizzas do you want? (€6.00)');  
+         var pizzalarge = prompt('How much large pizzas do you want? (€7.50)');  
+         // variabelen die een waarde krijgen door het vragen van input 
+
+         const PIZZASMALLPRICE = 4.50;  
+         const PIZZAMEDIUMPRICE = 6.00;  
+         const PIZZALARGEPRICE = 7.50;  
+         // prijzen van de pizza's die niet gewijzigd kunnen worden door de constante
+
+         var totalsmall = pizzasmall * PIZZASMALLPRICE;
+         var totalmedium = pizzamedium * PIZZAMEDIUMPRICE;
+         var totallarge = pizzalarge * PIZZALARGEPRICE;
+         // variabelen die een waarde krijgen door het aantal pizza's keer de prijs te vermenigvuldigen
+
+         var totaal = totalsmall + totalmedium + totallarge; 
+         // variabele die een waarde krijgt door alle vorige totalen bij elkaar op te tellen
+
+         document.write("<h1>Receipt<h1>")
+         document.write("The total price of the pizzas small is " + '€' + totalsmall + '<br>');
+         document.write("The total price of the pizzas medium is " + '€' + totalmedium + '<br>');
+         document.write("The total price of the pizzas large is " + '€' + totallarge + '<br>');
+         document.write("Total is " + '€' + totaal);
+
+  
+          
+      </script>
+  </body> 
+</html>

@@ -22,7 +22,7 @@
          const PIZZAMEDIUMPRICE = 6.00;  
          const PIZZALARGEPRICE = 7.50;  
          // prijzen van de pizza's die niet gewijzigd kunnen worden door de constante
-
+         
          var totalsmall = pizzasmall * PIZZASMALLPRICE;
          var totalmedium = pizzamedium * PIZZAMEDIUMPRICE;
          var totallarge = pizzalarge * PIZZALARGEPRICE;
@@ -30,7 +30,12 @@
 
          var totaal = totalsmall + totalmedium + totallarge; 
          // variabele die een waarde krijgt door alle vorige totalen bij elkaar op te tellen
-         document.getElementById("result").innerHTML = "The total of the pizzassmall is €" + totalsmall + "<br> The total of the pizzasmedium is € " + totalmedium + "<br> The total of the pizzaslarge is € " + totallarge + "<br> Total is € " + totaal;
+         var result =  document.getElementById("result");
+         result.innerHTML = "The total of the pizzassmall is € " + totalsmall + "<br> The total of the pizzasmedium is € " + totalmedium + "<br> The total of the pizzaslarge is € " + totallarge + "<br> Total is € " + totaal;
+         console.dir(result);
+         result.style.backgroundColor = "red";
+         result.style.color = "yellow";         
+         // geeft het element van de id terug met de waarde die er hier aan meegegeven wordt en past het aan
 
          //document.write("<h1>Receipt<h1>")
          //document.write("The total price of the pizzas small is " + '€' + totalsmall + '<br>');

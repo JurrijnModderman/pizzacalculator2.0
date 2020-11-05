@@ -5,16 +5,17 @@
   </head>
   <body>
 
-  	
+  		<div id="result"></div>
         <script>
-         let pizzasmall, pizzamedium, pizzalarge = document.createElement(prompt('How much small pizzas do you want? (€4.50)'), prompt('How much medium pizzas do you want? (€6.00)'), prompt('How much large pizzas do you want? (€7.50)'));
+         /*let pizzasmall, pizzamedium, pizzalarge = document.createElement(prompt('How much small pizzas do you want? (€4.50)'), prompt('How much medium pizzas do you want? (€6.00)'), prompt('How much large pizzas do you want? (€7.50)'));*/
          //let pizzamedium = document.createElement(prompt('How much medium pizzas do you want? (€6.00)'));
          //let pizzalarge = document.createElement(prompt('How much large pizzas do you want? (€7.50)'));
+        // (prompt('How much small pizzas do you want? (€4.50)'), prompt('How much medium pizzas do you want? (€6.00)'), prompt('How much large pizzas do you want? (€7.50)'));
 
-         document.body.appendChild(pizzasmall, pizzamedium, pizzalarge); 
-         //var pizzasmall = prompt('How much small pizzas do you want? (€4.50)');  
-         //var pizzamedium = prompt('How much medium pizzas do you want? (€6.00)');  
-         //var pizzalarge = prompt('How much large pizzas do you want? (€7.50)');  
+         //document.body.appendChild(pizzasmall, pizzamedium, pizzalarge); 
+         var pizzasmall = prompt('How much small pizzas do you want? (€4.50)');  
+         var pizzamedium = prompt('How much medium pizzas do you want? (€6.00)');  
+         var pizzalarge = prompt('How much large pizzas do you want? (€7.50)');  
          // variabelen die een waarde krijgen door het vragen van input 
 
          const PIZZASMALLPRICE = 4.50;  
@@ -29,6 +30,7 @@
 
          var totaal = totalsmall + totalmedium + totallarge; 
          // variabele die een waarde krijgt door alle vorige totalen bij elkaar op te tellen
+         document.getElementById("result").innerHTML = "The total of the pizzassmall is €" + totalsmall + "<br> The total of the pizzasmedium is € " + totalmedium + "<br> The total of the pizzaslarge is € " + totallarge + "<br> Total is € " + totaal;
 
          //document.write("<h1>Receipt<h1>")
          //document.write("The total price of the pizzas small is " + '€' + totalsmall + '<br>');
